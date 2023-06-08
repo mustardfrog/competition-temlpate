@@ -12,7 +12,7 @@ app.use(cors({ origin: true, credentials: true }));
 app.use(express.json({ extended: false }));
 app.use(express.urlencoded({ extended: true }));
 
-
+// handle routes
 app.use('/', router);
 
 app.listen(port, () => {
